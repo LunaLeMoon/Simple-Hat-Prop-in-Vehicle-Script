@@ -1,6 +1,6 @@
 # Simple-Hat-Prop-in-Vehicle-Script
 
-Hello! I am Luna, I am an amateur developer, with 2 years of server development experience. This is the first ever script I publish.
+Hello! I am Luna, I am a texture artist, videographer and amateur script developer. This is the first script I publish. With that said, say hello to the Simple Hat-Prop-In-Vehicle Script! 
 
 This script is designed to detect whether a player is wearing a hat/helmet (has a hat prop equipped), and ensures that said hat/helmet stays equipped when the player enters a vehicle. The purpose of this script is for better gameplay consistency. 
 
@@ -13,5 +13,4 @@ https://forum.cfx.re/u/mangolemoon/
 
 Join my Discord, get news on my videos, server development projects and texture designs/clothing, and for inquiries.
 https://discord.gg/wQUhaBBYj5
-
 
