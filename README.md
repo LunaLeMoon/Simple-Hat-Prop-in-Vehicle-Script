@@ -6,7 +6,7 @@ This script is designed to detect whether a player is wearing a hat/helmet (has 
 
 The original intention for this script is for to ensure continuity when filming videos on FiveM, but, I would like to extend this for anyone who would like to use it for their server, recordings, etc.
 
-Please refrain from making edits to the script if you're not sure what you're doing, otherwise it will not work for you. However, since it is free to use/edit, you may customize it for your needs, although please ensure you've credited me should you publish your version of my script. Cheers!
+Please refrain from making edits to the script if you're unsure of what you're doing, otherwise it will not work for you. However, since it is free to use/edit, you may customize it for your needs, although please ensure you've credited me should you publish your version of my script. Cheers!
 
 If you're interested in my work, or would like to reach me out, here is my CFX Forums page:
 https://forum.cfx.re/u/mangolemoon/
