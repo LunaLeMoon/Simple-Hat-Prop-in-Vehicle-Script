@@ -4,7 +4,7 @@ games { 'rdr3', 'gta5' }
 
 author 'LeMoon Studio'
 description 'Simple script that allows the player to keep their hat/hemet prop equipped when in a vehicle.'
-version '1.0.0'
+version '1.0.1'
 
 -- What to run
 client_scripts {
