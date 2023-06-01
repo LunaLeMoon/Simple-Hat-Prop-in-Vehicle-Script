@@ -16,7 +16,18 @@ https://discord.gg/wQUhaBBYj5
 
 # Changelog:
 
-## 1.0.1 
+## v1.0.2-beta
+> (2023-06-01)
+
+In this version, the client-side script sends the hat prop information to the server using `TriggerServerEvent` when the player enters a vehicle or leaves a vehicle. The server-side script then receives these events and broadcasts them to all clients using `TriggerClientEvent`.
+
+On the client-side, other players will receive the hat prop information through the `attachHatToPlayer` event and attach the hat prop to their respective player models. Similarly, when the `detachHatFromPlayer` event is received, other players will remove the hat prop from their player models.
+
+Fixed spelling error on _fxmanifest.lua_
+
+Changed tagging and semantic versioning to ensure it's known that this is a rather crude script, and not exactly ready for public use (FiveM servers and all that)
+
+## v1.0.1-beta
 > (2023-06-01)
 
 In this updated version, the `AttachHatToPlayer` function uses the `GetPropModelName` function to get the model name of the current hat prop. It then uses `GetHashKey` to get the hash value of the prop model dynamically. This way, the script can attach any hat prop that the player is wearing.
@@ -27,7 +38,7 @@ This udpate is still only client-sided, meaning, other players would not see a p
 
 Hopefully this works better.
 
-## 1.0.0 
+## v1.0.0-beta
 > (2023-05-30)
 
 First Version. Tested, the script did not work. This is probably due to the following:
