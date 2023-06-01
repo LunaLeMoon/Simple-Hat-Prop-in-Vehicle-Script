@@ -16,23 +16,24 @@ Citizen.CreateThread(function()
 
             if currentProp ~= -1 then
                 hatProp = currentProp -- Store the hat prop
-                AttachHatToPlayer(playerPed, hatProp) -- Attach the hat prop to the player
+                TriggerServerEvent('attachHatToPlayer', hatProp) -- Send hat prop to server for synchronization
             end
         elseif wasInVehicle and not inVehicle then
             wasInVehicle = false -- Left vehicle
 
             -- Remove the attached hat prop
             DetachHatFromPlayer()
+            TriggerServerEvent('detachHatFromPlayer') -- Notify server to remove hat prop for synchronization
         end
     end
 end)
 
-function AttachHatToPlayer(playerPed, hatProp)
+function AttachHatToPlayer(playerPed, prop)
     if not hatObject then
         local boneIndex = GetPedBoneIndex(playerPed, 0x39D7) -- Head bone index (SKEL_Head)
 
         if boneIndex ~= -1 then
-            local propHash = GetHashKey(GetPropModelName(hatProp))
+            local propHash = GetHashKey(GetEntityModel(prop))
 
             RequestModel(propHash)
             while not HasModelLoaded(propHash) do
@@ -56,17 +57,4 @@ function DetachHatFromPlayer()
         SetPedPropIndex(PlayerPedId(), 0, hatProp, 0, true)
         hatProp = 0
     end
-end
-
-function GetPropModelName(prop)
-    local propHash = GetHashKey(GetPedPropTextureIndex(PlayerPedId(), 0))
-
-    if propHash ~= 0 then
-        local modelName = GetHashKey(GetEntityModel(propHash))
-        if modelName ~= 0 then
-            return GetModelNameFromHash(modelName)
-        end
-    end
-
-    return ""
 end
