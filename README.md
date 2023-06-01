@@ -23,6 +23,8 @@ In this updated version, the `AttachHatToPlayer` function uses the `GetPropModel
 
 But, that does mean that some hat props might not attach 'correctly' to the player's character model due to their size or position. This might need adjustments to the attachment position parameters (0.09, 0.06, 0.12) in the `AttachEntityToEntity` function to ensure the hat is properly aligned and positioned on the character's head bone.
 
+This udpate is still only client-sided, meaning, other players would not see a player's hat/helmet remain equipped when in a vehicle. Will fix that.
+
 Hopefully this works better.
 
 ## 1.0.0 
