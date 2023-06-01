@@ -2,6 +2,16 @@ local wasInVehicle = false
 local hatProp = 0
 local hatObject = nil
 
+RegisterNetEvent('attachHatToPlayer')
+AddEventHandler('attachHatToPlayer', function(prop)
+    AttachHatToPlayer(PlayerPedId(), prop)
+end)
+
+RegisterNetEvent('detachHatFromPlayer')
+AddEventHandler('detachHatFromPlayer', function()
+    DetachHatFromPlayer()
+end)
+
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(10)
