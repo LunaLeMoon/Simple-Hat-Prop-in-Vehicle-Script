@@ -18,6 +18,7 @@ https://discord.gg/wQUhaBBYj5
 
 ## 1.0.1 
 > (2023-06-01)
+
 In this updated version, the AttachHatToPlayer function uses the GetPropModelName function to get the model name of the current hat prop. It then uses GetHashKey to get the hash value of the prop model dynamically. This way, the script can attach any hat prop that the player is wearing.
 
 But, that does mean that some hat props might not attach 'correctly' to the player's character model due to their size or position. This might need adjustments to the attachment position parameters (0.09, 0.06, 0.12) in the AttachEntityToEntity function to ensure the hat is properly aligned and positioned on the character's head bone.
@@ -26,6 +27,7 @@ Hopefully this works better.
 
 ## 1.0.0 
 > (2023-05-30)
+
 First Version. Tested, the script did not work. This is probably due to the following:
 
 1. Hat prop index: In the line local currentProp = GetPedPropIndex(playerPed, 0), I'd then need to make sure that the hat prop index (0) matches the correct prop index for the hat used in-game. In other words, if the hat prop index is different, I would then need to adjust this value accordingly. And honestly, no. That would be too much work, and it is inefficient. 
