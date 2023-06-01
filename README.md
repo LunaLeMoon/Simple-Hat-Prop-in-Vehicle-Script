@@ -8,10 +8,10 @@ The original intention for this script is for ensuring continuity when filming v
 
 Please refrain from making edits to the script if you're unsure of what you're doing, otherwise it will not work for you. However, since it is free to use/edit, you may customize it for your needs, although please ensure you've credited me should you publish your version of my script. Cheers!
 
-If you're interested in my work, or would like to reach me out, here is my CFX Forums page:
+If you're interested in my work, or would like to reach me out, here is my **CFX Forums page:**
 https://forum.cfx.re/u/mangolemoon/
 
-Join my Discord, get news on my videos, server development projects and texture designs/clothing, and for inquiries.
+Join my **Discord**, get news on my videos, server development projects and texture designs/clothing, and for inquiries.
 https://discord.gg/wQUhaBBYj5
 
 # Changelog:
