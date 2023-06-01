@@ -16,6 +16,21 @@ https://discord.gg/wQUhaBBYj5
 
 # Changelog:
 
+## v1.0.3-beta
+> (2023-06-01)
+
+After testing the previous version, I realized that the reason it doesn't work may be one of a few things:
+
+1. Inputting the wrong event names
+2. Missing event registration.
+3. Resource loading order
+
+So, to accomodate for these possible issues, I made the following changes:
+1. The client-side script should now register the custom events `attachHatToPlayer` and `detachHatFromPlayer` before using them. 
+2. On the server-side, the events are registered and handle broadcasting the hat prop information to all clients.
+
+I might have to adjust the event names again if I'm wrong, I suppose.
+
 ## v1.0.2-beta
 > (2023-06-01)
 
