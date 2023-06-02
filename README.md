@@ -19,7 +19,7 @@ https://discord.gg/wQUhaBBYj5
 ## v1.0.4-beta
 > (2023-06-02)
 
-Made syntax corrections. General purpose lua is not enough, I'd had to rewrite (with some help) so it complies with CfxLua/ Lua 5.3 syntax.
+Made syntax corrections. General purpose lua is not enough, I'd had to rewrite (with some help) so it complies with CfxLua/ Lua 5.3 syntax. Renamed the client script and corrected the client script name on fxmanifest.
 
 ## v1.0.3-beta
 > (2023-06-01)
