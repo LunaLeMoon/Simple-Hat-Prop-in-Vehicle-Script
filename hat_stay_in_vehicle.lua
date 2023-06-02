@@ -4,6 +4,7 @@ local hatObject = nil
 
 RegisterNetEvent('attachHatToPlayer')
 AddEventHandler('attachHatToPlayer', function(prop)
+    hatProp = prop
     AttachHatToPlayer(PlayerPedId(), prop)
 end)
 
@@ -25,8 +26,7 @@ Citizen.CreateThread(function()
             local currentProp = GetPedPropIndex(playerPed, 0)
 
             if currentProp ~= -1 then
-                hatProp = currentProp -- Store the hat prop
-                TriggerServerEvent('attachHatToPlayer', hatProp) -- Send hat prop to server for synchronization
+                TriggerServerEvent('attachHatToPlayer', currentProp) -- Send hat prop to server for synchronization
             end
         elseif wasInVehicle and not inVehicle then
             wasInVehicle = false -- Left vehicle
